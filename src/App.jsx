@@ -1,5 +1,5 @@
 
-import { BrowserRouter , Routes , Route , Link , useNavigate } from "react-router-dom";
+import { HashRouter as Router , Routes , Route , Link , useNavigate } from "react-router-dom";
 import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import homeImg from "../public/image/demo-homepage.jpg" ;
 import "./App.css" ;
@@ -138,7 +138,7 @@ function Study() {
 function App() {
 
   return ( 
-     <BrowserRouter>
+     <Router>
 
      <div className="app">
     
@@ -156,7 +156,7 @@ function App() {
     </div>
 
     
-    </BrowserRouter>
+    </Router>
 
     ) ;
 
