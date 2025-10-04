@@ -1,0 +1,149 @@
+
+
+.app {
+  
+    background-color: #212020;
+    color: white;
+    min-height: 100vh;
+    min-width: fit-content;
+
+
+}
+.home, .study, .hobby, .developer {
+    width: 100%;
+    min-height: calc(100vh - 60px); /* subtract navbar height if fixed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* or center if you want */
+}
+
+
+.navbar {
+
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: #212020;
+}
+
+.navbar a {
+     background-color: #3d08ce; 
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.welcome {
+    max-width: 90%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+.home-image {
+ 
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+
+}   
+
+.hobby-word {
+    text-align: center;
+    font-size: 30px;
+    background-image: linear-gradient();
+
+}
+.hobby {
+
+     background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), /* gradient overlay */
+    url("../public/image/demo-hobbypage.jpg"); /* background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+    max-width: 100%;
+}
+
+.click {
+    position: relative;
+    display: inline-block;
+    width: 90%;           /* responsive container width */
+    max-width: 500px;     /* don't grow too big on desktop */
+    margin: 20px auto;    /* center horizontally */
+}
+
+.study-image {
+    width: 100%;          /* image fills container */
+    height: auto;         /* maintain aspect ratio */
+    display: block;
+    border-radius: 12px;
+}
+
+.study-button {
+    position: absolute;   
+    left: 95%;             /* left side of image */
+    top: 72%;             /* 60% down the image */
+    transform: translateY(-50%);
+    padding: 1em 2em;     /* responsive padding */
+    font-size: 1rem;      /* relative font size */
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.study-button:hover {
+    background-color: #00b35a;
+    color: bisque;
+    transform: translateY(-50%) translateX(2px);
+}
+
+
+
+.intro {
+    font-size: 25px;
+    max-width: 95%;
+}
+
+
+.dev-intro {
+    font-size: 30px;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.profile a {
+  color: white;
+  font-size: 2rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.profile a:hover {
+  color: #007BFF;   /* professional blue on hover */
+  transform: scale(1.2);
+}
