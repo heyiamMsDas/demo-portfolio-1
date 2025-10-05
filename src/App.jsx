@@ -145,7 +145,7 @@ function App() {
       <Navbar/>
 
       <Routes>
-        <Route path="*" element={<Home/>}></Route>
+        <Route path="/" element={<Home/>}></Route>
         <Route path="/Study" element={<Study/>}></Route>
         <Route path="/Hobby" element={<Hobby/>}></Route>
         <Route path="/Developer" element={<Developer/>}></Route>
